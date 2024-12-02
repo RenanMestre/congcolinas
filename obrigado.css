@@ -1,0 +1,90 @@
+/* Centralização do conteúdo no corpo */
+body {
+    font-family: 'Arial', sans-serif;
+    font-size: 15px;
+    color: #333;
+    background: linear-gradient(135deg, #6A82FB, #FC5C7D);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    text-align: center;
+    overflow: hidden;
+}
+
+/* Organizando o conteúdo interno */
+.main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem; /* Espaçamento entre os elementos */
+}
+
+/* Estilo do cabeçalho */
+h1 {
+    font-size: 2.5rem;
+    color: #fff;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+/* Estilo do parágrafo */
+.paragrafo {
+    font-size: 1.2rem;
+    color: #f0f0f0;
+    line-height: 1.5;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
+}
+
+/* Botão estilizado */
+.btn {
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 1rem;
+    color: #fff;
+    background-color: #FF6F61;
+    border: none;
+    border-radius: 10px;
+    text-decoration: none;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+}
+
+/* Efeitos ao passar o mouse */
+.btn:hover {
+    background-color: #fc5c7d;
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.2);
+    transform: translateY(-3px);
+}
+
+
+/* Ajustes para telas menores */
+@media (max-width: 768px) {
+    h1 {
+        font-size: 2rem; /* Reduz o tamanho do título */
+    }
+
+    .paragrafo {
+        font-size: 1rem; /* Texto mais compacto */
+    }
+
+    .btn {
+        padding: 8px 16px; /* Botão menor */
+        font-size: 0.9rem;
+    }
+}
+
+@media (max-width: 480px) {
+    h1 {
+        font-size: 1.8rem; /* Ajuste adicional para smartphones */
+    }
+
+    .paragrafo {
+        font-size: 0.9rem;
+    }
+
+    .btn {
+        padding: 6px 12px;
+        font-size: 0.8rem;
+    }
+}
