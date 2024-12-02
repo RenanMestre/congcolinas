@@ -10,7 +10,7 @@ body {
   justify-content: center;
   align-items: center;
   min-height: 5vh;
-  background-image: url(/img/background.png);
+  background-image: url(./img/background.png);
   background-size: cover;
   background-repeat: no-repeat;
 }
@@ -106,7 +106,7 @@ nav a:nth-child(9):hover~span {
 
   body {
     background-repeat: none;
-    background-image: url(/img/background\ principal.png);
+    background-image: url(./img/background\ principal.png);
     background-size: cover; /* Altera para mostrar a imagem inteira sem cortar em telas menores */ 
     margin: 0;
     padding: 0;
